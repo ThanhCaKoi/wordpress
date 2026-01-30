@@ -2,7 +2,7 @@
 Theme Name: Best Onward Ticket
 Theme URI: https://bestonwardticket.com
 Description: Custom theme for BestOnwardTicket
-Version: 1.0
+Version: 1.1
 Author: User
 */
 
@@ -639,27 +639,23 @@ ul {
   border-color: rgba(0, 115, 230, 0.2);
 }
 
-.icon-box {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 115, 230, 0.1) 0%,
-    rgba(0, 115, 230, 0.05) 100%
-  );
-  color: var(--primary-color);
-  border-radius: 50%;
+.feature-icon {
+  margin-bottom: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  margin: 0 auto 25px;
-  transition: 0.3s;
+  align-items: center;
+  height: 120px; /* Fixed height for alignment */
 }
 
-.feature-card:hover .icon-box {
-  background: var(--primary-color);
-  color: white;
+.feature-icon img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 115, 230, 0.15));
+}
+
+.feature-card:hover .feature-icon img {
   transform: scale(1.1);
 }
 
@@ -812,73 +808,26 @@ ul {
 }
 
 /* Ticket Visual Styling - Modern Polish */
-.ticket-visual {
-  background: linear-gradient(135deg, #ffffff 0%, #f9fcff 100%);
-  padding: 50px;
-  border-radius: 24px;
-  box-shadow: 0 25px 50px rgba(0, 115, 230, 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  text-align: center;
-  border: 1px solid rgba(0, 115, 230, 0.1);
-  position: relative;
-}
-
-.ticket-visual::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(
-    circle,
-    rgba(0, 115, 230, 0.05) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-}
-
-.ticket-icon-large {
-  font-size: 6rem;
-  color: var(--primary-color);
-  margin-bottom: 35px;
-  background: white;
-  width: 140px;
-  height: 140px;
+.image-content .img-wrapper {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: rotate(2deg); /* Stylish tilt */
+  transition: 0.3s;
 }
 
-.ticket-details-visual {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.image-content .img-wrapper:hover {
+  transform: rotate(0deg);
+}
+
+.image-content .img-wrapper img {
   width: 100%;
-}
-
-.ticket-details-visual span {
-  background: white;
-  padding: 15px 20px;
+  height: auto;
   border-radius: 12px;
-  font-weight: 600;
-  color: #34495e;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 1px solid #eee;
-}
-
-.ticket-details-visual span i {
-  color: var(--success);
 }
 
 /* Testimonials - Speech Bubble Style */
@@ -933,22 +882,13 @@ ul {
   padding-top: 20px;
 }
 
-.avatar {
+.avatar-img {
   width: 50px;
   height: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--primary-dark)
-  );
-  color: var(--white);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  box-shadow: 0 5px 15px rgba(0, 115, 230, 0.3);
+  object-fit: cover;
+  border: 2px solid var(--white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .user .info h5 {

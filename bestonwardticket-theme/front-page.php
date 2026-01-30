@@ -263,17 +263,23 @@
         <div class="container">
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="icon-box"><i class="fas fa-shield-check"></i></div>
+                    <div class="feature-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature_verifiable.png" alt="100% Verifiable Icon">
+                    </div>
                     <h3>100% Verifiable</h3>
                     <p>Real PNR codes verifiable on major airline websites (AirFrance, Lufthansa, etc).</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <div class="feature-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature_instant.png" alt="Instant Delivery Icon">
+                    </div>
                     <h3>Instant Delivery</h3>
                     <p>Receive your perfectly formatted PDF ticket immediately after payment.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon-box"><i class="fas fa-lock"></i></div>
+                    <div class="feature-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature_secure.png" alt="Secure & Safe Icon">
+                    </div>
                     <h3>Secure & Safe</h3>
                     <p>We value your privacy. Payments processed securely via PayPal.</p>
                 </div>
@@ -323,17 +329,9 @@
                     <li><strong>Visa Applicants</strong> who need a flight itinerary for their application.</li>
                 </ul>
             </div>
-            <div class="image-content placeholders" style="background: none; height: auto;">
-                <!-- Icon Composition instead of Image -->
-                <div class="ticket-visual">
-                    <div class="ticket-icon-large">
-                        <i class="fas fa-plane-departure"></i>
-                    </div>
-                    <div class="ticket-details-visual">
-                        <span><i class="fas fa-check"></i> Valid PNR Code</span>
-                        <span><i class="fas fa-check"></i> Real Airline Reservation</span>
-                        <span><i class="fas fa-check"></i> 48hr Validity</span>
-                    </div>
+            <div class="image-content">
+                <div class="img-wrapper">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seo_travel_illustration.png" alt="Travel Documents Illustration">
                 </div>
             </div>
         </div>
@@ -349,7 +347,7 @@
                 <div class="content-card testimonial">
                     <p>"Saved my trip! The airline wouldn't let me check in without a return flight. I bought this at the counter, got the PDF in 2 minutes."</p>
                     <div class="user">
-                        <div class="avatar">S</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_sarah.png" alt="Sarah J." class="avatar-img">
                         <div class="info">
                             <h5>Sarah J.</h5>
                             <span>Digital Nomad</span>
@@ -359,7 +357,7 @@
                 <div class="content-card testimonial">
                     <p>"Perfect for my Schengen visa application. The consulate needed a flight itinerary, but I didn't want to pay for a flight yet. Works perfectly."</p>
                     <div class="user">
-                        <div class="avatar">C</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_carlos.png" alt="Carlos M." class="avatar-img">
                         <div class="info">
                             <h5>Carlos M.</h5>
                             <span>Traveler</span>
@@ -369,7 +367,7 @@
                 <div class="content-card testimonial">
                     <p>"Legit service. I entered the PNR on the airline's website and it was there. Valid for well over 48 hours which gave me plenty of time."</p>
                     <div class="user">
-                        <div class="avatar">H</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_hiroshi.png" alt="Hiroshi T." class="avatar-img">
                         <div class="info">
                             <h5>Hiroshi T.</h5>
                             <span>Backpacker</span>
