@@ -1,0 +1,38 @@
+/**
+ * Custom CSS for Elementor Pricing Cards
+ * 
+ * INSTRUCTIONS:
+ * 1. Go to your Elementor Editor.
+ * 2. Select the Pricing Table widget (or the Inner Section containing your pricing cards).
+ * 3. Go to the "Advanced" tab.
+ * 4. In "CSS Classes", add the class name: custom-pricing-card
+ * 5. Paste the code below into "Custom CSS" (Elementor Pro) or your theme's custom CSS area.
+ */
+
+/* Main Container Transition */
+.custom-pricing-card .elementor-price-table {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent; /* Prepare for border highlight */
+  border-radius: 10px; /* Optional: smooth corners */
+}
+
+/* Hover State */
+.custom-pricing-card .elementor-price-table:hover {
+  /* Scale Up */
+  transform: translateY(-10px) scale(1.02);
+
+  /* Box Shadow */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important; /* Force override if needed */
+
+  /* Border Highlight (Tech Blue) */
+  border-color: #0073e6;
+}
+
+/* Optional: Highlight the Call To Action button on hover */
+.custom-pricing-card
+  .elementor-price-table:hover
+  .elementor-price-table__button {
+  background-color: #0073e6;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 115, 230, 0.4);
+}
